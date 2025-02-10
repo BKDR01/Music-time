@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body class="flex items-center justify-center min-h-screen bg-black">
+    <div class="bg-gray-900 p-4 rounded-2xl shadow-lg w-64">
+        <img class="w-full h-40 object-cover rounded-lg" id="Imgplyer" src="" alt="">
+        <div class="mt-4 text-white">
+            <h2 class="text-lg font-bold" id="Musictitle"></h2>
+            <p class="text-sm text-gray-400"></p>
+            <p class="text-[13px]" id="BarTime"></p>
+            <input type="range" id="progressBar" class="w-full" value="0" min="0" max="100">
+
+                <br>
+            <select class="bg-white w-[100px] text-black rounded-md mx-auto" name="" id="songSelect">         </select>
+            <audio id="AudioPlayer" src=""></audio>
+        </div>
+        <div class="mt-4 flex items-center justify-center space-x-4">
+            <button class="bg-gray-700 px-3 py-2 text-white rounded-lg text-sm font-semibold" id="prevBtn">⏪</button>
+            <button class="bg-green-500 px-4 py-2 text-white rounded-lg text-sm font-semibold" id="PlayPouseBtn">Play</button>
+            <button class="bg-gray-700 px-3 py-2 text-white rounded-lg text-sm font-semibold" id="nextBtn">⏩</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
